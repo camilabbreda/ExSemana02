@@ -1,0 +1,52 @@
+body {
+    background-color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+          }
+          /* body{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .title{
+    font-family: Arial;
+    color: crimson;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 50px;
+    text-align: center;
+  } */
+
+
+ .center  {
+    text-align: center;
+       }
+
+  img{
+    width: 500px;
+  }
+  h1 {
+    color: orange;
+    font-size: 32px;
+    background-color: purple;
+    text-align: center;
+  }
+  /* COMO CENTRALIZAR A IMAGEM? */
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .Ing {
+    font-size: 18px;
+    text-align: center;
+  }
+  .rec {
+    text-align: justify;
+    font-size: 18px;
+  }

@@ -11,3 +11,11 @@ git pull origin master --allow-unrelated-histories
 https://github.com/raydevcp20/turma-clamed
 
 https://www.gitkraken.com/
+
+Git hub
+
+
+Configurar o Git:
+git config --global user.name "Seu nome"
+git config --global user.email "seu email"
+git config --list

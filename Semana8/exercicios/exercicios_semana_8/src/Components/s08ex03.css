@@ -1,0 +1,99 @@
+.titulo{
+    text-align: center;
+    color: blue;
+
+}
+.produto{
+    display: flex;
+    position:relative;
+    width: 70%;
+    height: 100%;
+    margin: 50px auto;
+    padding: 50px 0 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    border-width: 2px;
+}
+.tabela{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    width: 90%;
+    text-align: center;
+}
+
+td{
+    border: 1px solid black;
+    background-color: rgb(214, 237, 246);
+    margin: 0px;
+    width: 200px;
+    text-align: center;
+
+
+    
+}
+
+th{
+    border: 1px solid black;
+    margin: 0px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(150, 214, 243);
+}
+.imagemPokemon{
+    border-radius: 50%;
+    height: 120px;
+    background-color: white
+}
+.Grass{
+    background-color: rgb(207, 244, 219);
+    text-align: center;
+    display: flexbox;
+    margin:20px;
+    padding: 20px;
+    width: 180px;
+    border-radius: 8%;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    
+}
+.Fire{
+    background-color: rgb(237, 196, 196);
+    text-align: center;
+    display: flexbox;
+    margin:20px;
+    padding: 20px;
+    width: 180px;
+    border-radius: 8%;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);;
+}
+.Water{
+    background-color: rgb(196, 223, 237);
+    text-align: center;
+    display: flexbox;
+    margin:20px;
+    padding: 20px;
+    width: 180px;
+    border-radius: 8%;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.Bug{
+    background-color: rgb(237, 221, 196);
+    text-align: center;
+    display: flexbox;
+    margin:20px;
+    padding: 20px;
+    width: 180px;
+    border-radius: 8%;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.idPokemon{
+    background-color: rgb(188, 188, 188);
+    text-align: center;
+    display: flexbox;
+    width: 30%;
+    border-radius: 12%;
+   text-align: center;
+   margin-left: 36%;
+
+    
+}

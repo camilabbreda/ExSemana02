@@ -1,0 +1,31 @@
+.head{
+    display: flex;
+    flex-direction: row;
+}
+.imagem{
+    border-radius: 50%;
+    height: 120px;
+}
+.tituloNickname{
+    margin-left: 20px;
+
+}
+.titulo{
+    margin-bottom: 0;
+}
+.nickname{
+    margin-top: 0px;
+}
+.fotoProduto{
+    border-radius: 5%;
+    width: 500px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+.valores{
+    text-align: left;
+    margin-left: 0px;
+    margin-right:200px ;
+}

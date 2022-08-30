@@ -22,38 +22,39 @@ export default function Exercise08() {
 
     const [file, setFile] = useState(files)
     const intervalId = useRef();
-    const i = 0
+    let i = 1
     function iniciarDownload(key) {
-        intervalId.current = setInterval(() => {
-            const newFile = file.map(item => {
-                return item.id === key ? { ...item, downloaded: i += 1, isDownloading: true } : item
-            })
-            setFile(prev => prev = newFile)
-        },1000);
-    }
+        intervalId.current = setInterval(()=>{
+        setFile(() => file.map(item => {
+            return item.id === key ? { ...item, downloaded: i, isDownloading: true } : item
+        }))
+        i= i+1
+    }, 50)}
 
 
-    // useEffect(() => {
-    //     file.map(item => {
-    //         if (item.isDownloading && item.downloaded >= 100) {
-    //             clearInterval(intervalId.current)
-    //             item.isDownloading = false;
-    //             item.downloaded = 0;
-    //             console.log(item);
-    //         }
-    //     })
-    //     console.log(file);
+    useEffect(()=>{
+        file.map(item => {
+            if (item.isDownloading && item.downloaded >= 100) {
+                clearInterval(intervalId.current)
+                item.isDownloading = false;
+                item.downloaded = 0;
+                console.log(item);
+                i=0
+            }
+        })
+    },[file]) 
+    
 
-    // }, [file])
 
+    
 
 
     return (
         <>
             {file.map((item) => (
                 <div style={{ 'display': 'flex', 'flexDirection': 'column', 'maxWidth': '240px', 'margin': '0 auto', 'alignItems': 'center' }}>
-                    <h4 key={item.id}>{item.nome} - {item.isDownloading}</h4>
-                    <progress key={item.id} value={item.downloaded} min="0" max="100"></progress>
+                    <h4>{item.nome} - {item.isDownloading}</h4>
+                    <progress value={item.downloaded} min="0" max="100"></progress>
                     <button key={item.id} onClick={() => iniciarDownload(item.id)}>Download</button>
                 </div>
             ))}

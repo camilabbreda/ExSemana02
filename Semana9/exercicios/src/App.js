@@ -7,7 +7,9 @@ import './App.css';
 // import Exercise05 from './Components/s09ex05';
 // import Exercise06 from './Components/s09ex06';
 // import Exercise07 from './Components/s09ex07';
-import Exercise08 from './Components/s09ex08';
+// import Exercise08 from './Components/s09ex08';
+import Exercise09 from './Components/s09ex09';
+// import Exercise10 from './Components/s09ex10';
 
 
 
@@ -27,7 +29,9 @@ function App() {
       {/* <Exercise05/> */}
       {/* <Exercise06/> */}
       {/* <Exercise07/> */}
-      <Exercise08/>
+      {/* <Exercise08/> */}
+      <Exercise09/>
+      {/* <Exercise10/> */}
 
     </div>
   );

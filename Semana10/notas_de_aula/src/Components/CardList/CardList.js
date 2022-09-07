@@ -1,7 +1,7 @@
-export default function CardList(){
+export default function CardList({children}){
    return(
     <div>
-        CardList
+        {children}
     </div>
 )
 }

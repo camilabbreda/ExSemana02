@@ -1,8 +1,8 @@
 import { useState } from "react"
-import { useTipReducer } from "../../Reducers/app-reducer"
+// import { useTipReducer } from "../../Reducers/app-reducer"
 import LivroLogo from "../../Imagens/LivroLogo.png"
 
-export default function SideBar() {
+export default function SideBar({dispatch}) {
     const [tip, setTip] = useState({
         id: Math.random(),
         titulo: "",
@@ -12,8 +12,8 @@ export default function SideBar() {
         video: ""
     })
 
-    const [state, dispatch] = useTipReducer();
-    const { tipList } = state
+    // const [state, dispatch] = useTipReducer();
+    // const { tipList } = state
 
 
     function handleCreateTip(e) {
@@ -37,7 +37,8 @@ export default function SideBar() {
         }
 
     }
-    console.log("tiplist:" + JSON.stringify(tipList))
+
+
 
     function limparFormulario() {
         setTip({

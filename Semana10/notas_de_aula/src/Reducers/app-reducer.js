@@ -1,5 +1,6 @@
 import { useReducer } from "react";
 const initialState = { tipList: [] }
+
 function reducer(state, action) {
 
     switch (action.type) {
@@ -11,4 +12,4 @@ function reducer(state, action) {
 }
 export const useTipReducer = () => {
     return useReducer(reducer, initialState)
-  }
+}

@@ -2,8 +2,12 @@ import apagarPost from "../../Imagens/apagarPost.png"
 import editarPost from "../../Imagens/editarPost.png"
 import playPost from "../../Imagens/playPost";
 
-export default function TipCard({id, titulo, skill, categoria, descricao, youtube}) {
+
+export default function TipCard({id, titulo, linguagem, categoria, descricao, video}) {
+
+
     return (
+
         <li className="publicacoes" id="publicacoes2" name={id}>
             <div style={{ marginLeft: "30px" }}>
                 <div id="tituloPublicado">
@@ -11,7 +15,7 @@ export default function TipCard({id, titulo, skill, categoria, descricao, youtub
                 </div>
                 <div className="caixaDeTextoPublicacao" >
                     <p className="publicado">Linguagem/Skill:</p>
-                    <p id="inserirLiguagemSkill">{skill}</p>
+                    <p id="inserirLiguagemSkill">{linguagem}</p>
                 </div>
                 <div className="caixaDeTextoPublicacao">
                     <p className="publicado">Categoria: </p>
@@ -30,7 +34,7 @@ export default function TipCard({id, titulo, skill, categoria, descricao, youtub
                     </button>
                     <div id="botaoYoutube">
                         <button className="botaoPesquisar" id={id}>
-                            <a href={youtube} target="_blank" rel="noreferrer"><img src={playPost} style={{width: "22px"}} alt=""/></a>
+                            <a href={video} target="_blank" rel="noreferrer"><img src={playPost} style={{width: "22px"}} alt=""/></a>
                         </button>
                     </div>
 

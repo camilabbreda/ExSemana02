@@ -1,8 +1,10 @@
 import { useState } from "react"
 // import { useTipReducer } from "../../Reducers/app-reducer"
 import LivroLogo from "../../Imagens/LivroLogo.png"
+import { useTips } from "../../Contexts/app-context"
 
-export default function SideBar({dispatch}) {
+export default function SideBar() {
+    const {dispatch} = useTips()
     const [tip, setTip] = useState({
         id: Math.random(),
         titulo: "",
@@ -40,7 +42,8 @@ export default function SideBar({dispatch}) {
 
 
 
-    function limparFormulario() {
+    function limparFormulario(e) {
+        e.preventDefault()
         setTip({
             id: 1,
             titulo: "",

@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Login from './Components/Login';
+import Rotas from './Routes/Routas';
 import './index.css';
 // import Cronometro from './App';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import reportWebVitals from './reportWebVitals';
 
@@ -10,7 +12,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 {/* <Cronometro/> */}
+<Rotas>
 <Login/>
+</Rotas>
+
   </React.StrictMode>
 );
 

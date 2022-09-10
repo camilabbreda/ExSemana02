@@ -1,11 +1,13 @@
 import { useReducer } from "react";
-const initialState = { tipList: [] }
+const initialState = { tipList: [], filterValue:"" }
 
 function reducer(state, action) {
 
     switch (action.type) {
         case 'addTipToTipList':
             return { tipList: [...state.tipList, action.payload] }
+        case 'setFilteredValue':
+            return {filterValue: action.payload}
         default:
             return state
     }

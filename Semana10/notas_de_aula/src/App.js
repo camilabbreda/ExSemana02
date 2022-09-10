@@ -1,10 +1,13 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Home from './Pages/Home';
+import { TipProvider } from "./Contexts/app-context"
 function App() {
   return (
     <div>
-      <Home/>
+      <TipProvider>
+        <Home />
+      </TipProvider>
     </div>
   );
 }

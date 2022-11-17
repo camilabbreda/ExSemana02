@@ -1,0 +1,38 @@
+public class Vendedor{
+    private static contador = 0;
+    private Integer identificador;
+    private String nome;
+    private String cpf;
+
+    Vendedor(Strign nome,String cpf){
+        this.nome = nome;
+        this.cpf = validaCpf(cpf);
+        this.identificador = contador++; //identificador = 0, 1, 2
+    }   //contador = 1, 2, 3
+
+    validaCpf(String cpf){
+        //código validação
+        try {
+            
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+}
+}
+
+public class VendedorJunior extends Vendedor{
+    List<Produtos> produtos = new ArrayList();
+
+    VendedorJunior(Strign nome,String cpf){
+        super(nome, cpf)
+    }
+
+    
+
+}
+
+public class Programa(){
+    public static void main(String[] args) {
+        VendedorJunior vj = new VendedorJunior("Junior","127391612387")
+    }
+}

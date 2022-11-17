@@ -257,6 +257,9 @@ function editarPost() {
 
         criarFormulario(formulario);
         escrevePublicacao(arrayDeObjetoDoLocalStorage);
+        atribuirIndiceAoBotaoDeletarPost()
+        atribuirIndiceAoBotaoEditarPost()
+
 
         const botaoSalvar = document.getElementById("botaoSalvar");
         botaoSalvar.addEventListener("click", recebeDadosDoFormulario);

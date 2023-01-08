@@ -1,16 +1,18 @@
 package com.example.exercicios.Controller.dto;
 
 import com.example.exercicios.dataProvider.model.PerguntaEntity;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class RespostaResponse {
     private String textoResposta;
-    private PerguntaEntity perguntaEntity;
+
+    private String textoPergunta;
+    private String nomeAssunto;
+
+
 }

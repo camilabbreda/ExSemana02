@@ -8,40 +8,57 @@ import com.example.exercicios.dataProvider.repository.PerguntaRepository;
 import com.example.exercicios.dataProvider.repository.RespostaRepository;
 import com.example.exercicios.exception.NotFoundException;
 import com.example.exercicios.exception.ServerErrorException;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 @Service
+@AllArgsConstructor
 public class RespostaService {
     private RespostaRepository respostaRepository;
     private PerguntaRepository perguntaRepository;
 
+
     public List<RespostaResponse> encontrarTodasRespostas(){
         try {
-            List<RespostaEntity> respostasEntity = respostaRepository.findAll();
-            List<RespostaResponse> respostaResponses = new ArrayList<>();
+            List<RespostaResponse> respostaResponse = new ArrayList<>();
+            List<RespostaEntity> respostaEntity = respostaRepository.findAll();
 
-            if (respostasEntity.size() == 0) {
-                String message = "Nenhuma Resposta Encontrada!";
-                throw new NotFoundException(message);
-            }
-            for (int i = 0; i <= respostasEntity.size() - 1; i++) {
-                respostaResponses.add(new RespostaResponse(
-                        respostasEntity.get(i).getTextoResposta(),
-                        respostasEntity.get(i).getPerguntaEntity()
+            if (respostaEntity.size() != 0) {
+            for (RespostaEntity resposta:respostaEntity) {
+                respostaResponse.add(new RespostaResponse(
+                        resposta.getTextoResposta(),
+                        resposta.getPerguntaEntity().getTextoPerguntas(),
+                        resposta.getPerguntaEntity().getAssuntoEntity().getNomeAssunto()
                 ));
             }
-            return respostaResponses;
-        }catch (Exception e){
+                return respostaResponse;
+            }
+                throw new NotFoundException();
+        }catch (NotFoundException e){
+            throw new NotFoundException("Nenhuma Resposta Encontrada!");
+        }
+        catch (Exception e){
             throw new ServerErrorException("Erro ao buscar Respostas");
         }
     }
 
         public RespostaResponse adicionarResposta(RespostaRequest respostaRequest){
-            PerguntaEntity perguntaEntity = perguntaRepository.findById(respostaRequest.getPerguntaId()).orElseThrow(()-> new NotFoundException("Pergunta não Existe!"));
-            RespostaEntity respostaEntity = respostaRepository.save(new RespostaEntity(respostaRequest.getTextoResposta(), perguntaEntity));
-            return new RespostaResponse(respostaEntity.getTextoResposta(), respostaEntity.getPerguntaEntity());
+            PerguntaEntity perguntaEntity = perguntaRepository.findById(respostaRequest.getPerguntaId()).orElseThrow(
+                    ()-> new NotFoundException("Pergunta não Existe!")
+            );
+            RespostaEntity respostaEntity = respostaRepository.save(
+                    new RespostaEntity(
+                            respostaRequest.getTextoResposta(),
+                            perguntaEntity
+                    )
+            );
+            return new RespostaResponse(
+                    respostaEntity.getTextoResposta(),
+                    respostaEntity.getPerguntaEntity().getTextoPerguntas(),
+                    perguntaEntity.getAssuntoEntity().getNomeAssunto()
+            );
     }
 
 

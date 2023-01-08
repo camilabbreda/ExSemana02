@@ -12,7 +12,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value="/resposta")
-@AllArgsConstructor
+
+@AllArgsConstructor //VERIFICAR
 public class RespostaController {
 
     private final RespostaService service;

@@ -6,13 +6,16 @@ import lombok.*;
 
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 public class PerguntaResponse {
     private String textoPergunta;
-    private AssuntoEntity assuntoEntity;
+    private String nomeAssunto;
+//    private AssuntoEntity assuntoEntity;
 
-    public PerguntaResponse(String textoPergunta, AssuntoEntity assuntoEntity){
+    public PerguntaResponse(String textoPergunta, String nomeAssunto){
         this.textoPergunta=textoPergunta;
-        this.assuntoEntity = assuntoEntity;
+        this. nomeAssunto = nomeAssunto;
+//        this.assuntoEntity = assuntoEntity;
     }
 }

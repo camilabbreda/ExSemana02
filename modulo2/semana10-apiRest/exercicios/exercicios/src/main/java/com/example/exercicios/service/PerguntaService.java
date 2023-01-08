@@ -26,17 +26,18 @@ public class PerguntaService {
         try {
         List<PerguntaResponse> perguntasResponse = new ArrayList<>();
         List<PerguntaEntity> perguntaEntity = perguntaRepository.findAll();
-//            if (perguntaEntity.size() == 0) {
-//            throw new NotFoundException();
-//            }
+            if (perguntaEntity.size() == 0) {
+            throw new NotFoundException();
+            }
             for (PerguntaEntity pergunta: perguntaEntity) {
                 perguntasResponse.add(
                         new PerguntaResponse(
                                 pergunta.getTextoPerguntas(),
-                                pergunta.getAssuntoEntity()
+                                pergunta.getAssuntoEntity().getNomeAssunto()
                         )
                 );
             }
+
             return perguntasResponse;
         } catch (NotFoundException e) {
             throw new NotFoundException("Nenhuma pergunta encontrada");
@@ -47,14 +48,17 @@ public class PerguntaService {
 
     public PerguntaResponse adicionarPergunta(PerguntaRequest perguntaRequest){
         AssuntoEntity assuntoEntity = assuntoRepository.findById(perguntaRequest.getAssuntoId()).orElseThrow(
-                ()-> new NotFoundException("Assunto não encontrado")
+                ()-> new NotFoundException("Assunto não existe")
         );
         PerguntaEntity perguntaEntity = perguntaRepository.save(
                 new PerguntaEntity(
                         perguntaRequest.getTextoPergunta(),
                         assuntoEntity)
         );
-        return new PerguntaResponse(perguntaEntity.getTextoPerguntas(), perguntaEntity.getAssuntoEntity());
+        return new PerguntaResponse(
+                perguntaEntity.getTextoPerguntas(),
+                perguntaEntity.getAssuntoEntity().getNomeAssunto()
+        );
     }
 
 }

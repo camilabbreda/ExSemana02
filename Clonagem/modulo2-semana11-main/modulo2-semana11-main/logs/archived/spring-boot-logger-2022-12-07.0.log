@@ -1,0 +1,813 @@
+2022-12-07 19:30:31,414 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 13940 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 19:30:31,420 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 19:30:31,555 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 19:30:31,556 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 19:30:32,747 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 19:30:32,851 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 95ms. Found 1 repository interfaces.
+2022-12-07 19:30:33,389 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5c47c4a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 19:30:33,948 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 19:30:33,989 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 19:30:33,990 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 19:30:34,005 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 19:30:34,223 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 19:30:34,225 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2668 ms
+2022-12-07 19:30:34,514 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 19:30:34,793 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 19:30:34,881 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 19:30:34,998 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 19:30:35,003 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 19:30:35,205 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 19:30:35,418 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 19:30:35,448 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 19:30:35,455 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@51ed48a8
+2022-12-07 19:30:36,211 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 19:30:36,249 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 19:30:36,632 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 19:30:36,651 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 19:30:36,702 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 19:30:37,047 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 19:30:37,535 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 19:30:37,612 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 19:30:37,956 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 19:30:37,963 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 7.251 seconds (JVM running for 8.038)
+2022-12-07 19:32:05,650 INFO org.apache.juli.logging.DirectJDKLog [http-nio-0.0.0.0-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-07 19:32:05,651 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-12-07 19:32:05,660 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-1] Completed initialization in 9 ms
+2022-12-07 19:38:46,969 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 19:38:46,972 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 19:38:46,974 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-9] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 19:38:46,995 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown initiated...
+2022-12-07 19:38:47,001 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown completed.
+2022-12-07 19:39:08,280 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 8568 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 19:39:08,285 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 19:39:08,384 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 19:39:08,386 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 19:39:09,547 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 19:39:09,639 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 82ms. Found 1 repository interfaces.
+2022-12-07 19:39:10,224 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$87baea8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 19:39:10,827 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 19:39:10,881 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 19:39:10,882 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 19:39:10,893 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 19:39:11,060 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 19:39:11,064 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2678 ms
+2022-12-07 19:39:11,302 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 19:39:11,592 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 19:39:11,682 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 19:39:11,762 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 19:39:11,763 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 19:39:11,964 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 19:39:12,227 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 19:39:12,252 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 19:39:12,259 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4e2e94c
+2022-12-07 19:39:12,998 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 19:39:12,998 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 19:39:13,435 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 19:39:13,522 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 19:39:13,553 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 19:39:14,005 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 19:39:14,398 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 19:39:14,449 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 19:39:14,795 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 19:39:14,805 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 7.279 seconds (JVM running for 8.063)
+2022-12-07 19:41:13,889 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 19:41:13,894 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 19:41:13,897 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-9] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 19:41:13,922 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown initiated...
+2022-12-07 19:41:13,930 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown completed.
+2022-12-07 19:41:17,835 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 7828 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 19:41:17,840 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 19:41:17,916 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 19:41:17,916 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 19:41:19,211 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 19:41:19,308 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 85ms. Found 1 repository interfaces.
+2022-12-07 19:41:19,927 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$63a4ad61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 19:41:20,523 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 19:41:20,561 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 19:41:20,562 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 19:41:20,578 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 19:41:20,725 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 19:41:20,727 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2811 ms
+2022-12-07 19:41:20,974 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 19:41:21,263 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 19:41:21,335 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 19:41:21,500 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 19:41:21,501 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 19:41:21,695 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 19:41:21,969 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 19:41:21,987 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 19:41:21,995 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@11da601d
+2022-12-07 19:41:22,642 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 19:41:22,642 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 19:41:22,879 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 19:41:22,895 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 19:41:22,954 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 19:41:23,334 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 19:41:23,741 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 19:41:23,805 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 19:41:24,108 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 19:41:24,115 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 6.993 seconds (JVM running for 7.748)
+2022-12-07 20:14:05,158 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-5] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 20:14:05,160 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 20:14:05,163 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-5] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 20:14:05,190 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2022-12-07 20:14:05,197 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2022-12-07 20:14:06,412 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 7828 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 20:14:06,413 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 20:14:06,659 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 20:14:06,661 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2022-12-07 20:14:06,716 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$63a4ad61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 20:14:06,763 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 20:14:06,765 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 20:14:06,766 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 20:14:06,787 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 20:14:06,788 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 372 ms
+2022-12-07 20:14:06,843 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2022-12-07 20:14:06,913 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2022-12-07 20:14:06,923 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 20:14:06,932 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 20:14:06,934 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 20:14:06,935 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@11da601d
+2022-12-07 20:14:06,959 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 20:14:06,978 WARN org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl [restartedMain] GenerationTarget encountered exception accepting command : Error executing DDL "INSERT INTO public.contato(	email, id_grupo, nome, telefone_celular, telefone_fixo, telefone_trabalho)	VALUES ('brunomourapaz@gmai.com', 1, 'Bruno','9999999', '888888', '888888')" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "INSERT INTO public.contato(	email, id_grupo, nome, telefone_celular, telefone_fixo, telefone_trabalho)	VALUES ('brunomourapaz@gmai.com', 1, 'Bruno','9999999', '888888', '888888')" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:440)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applyImportSources(SchemaCreatorImpl.java:491)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:180)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:155)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.clamed.Application.main(Application.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "public.contato" does not exist
+  Posição: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 36 common frames omitted
+2022-12-07 20:14:06,980 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 20:14:06,989 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 20:14:07,090 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 20:14:07,096 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 20:14:07,194 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 20:14:07,196 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 1.871 seconds (JVM running for 1970.83)
+2022-12-07 20:14:07,200 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-12-07 20:43:56,940 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-16] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 20:43:56,943 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-16] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 20:43:56,944 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-16] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 20:43:56,946 INFO com.zaxxer.hikari.HikariDataSource [Thread-16] HikariPool-2 - Shutdown initiated...
+2022-12-07 20:43:56,975 INFO com.zaxxer.hikari.HikariDataSource [Thread-16] HikariPool-2 - Shutdown completed.
+2022-12-07 20:45:31,953 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 13372 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 20:45:31,958 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 20:45:32,049 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 20:45:32,052 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 20:45:33,524 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 20:45:33,608 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 79ms. Found 1 repository interfaces.
+2022-12-07 20:45:34,130 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef3c318e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 20:45:34,672 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 20:45:34,723 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 20:45:34,724 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 20:45:34,740 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 20:45:34,866 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 20:45:34,867 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2813 ms
+2022-12-07 20:45:35,117 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 20:45:35,420 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 20:45:35,521 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 20:45:35,599 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 20:45:35,600 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 20:45:35,774 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 20:45:35,984 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 20:45:36,010 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 20:45:36,025 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4e86348e
+2022-12-07 20:45:36,801 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 20:45:36,802 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 20:45:37,100 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 20:45:37,120 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 20:45:37,168 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 20:45:37,527 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 20:45:37,908 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 20:45:37,975 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 20:45:38,298 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 20:45:38,304 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 7.055 seconds (JVM running for 7.829)
+2022-12-07 20:48:23,335 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-5] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 20:48:23,338 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 20:48:23,340 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-5] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 20:48:23,359 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2022-12-07 20:48:23,366 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2022-12-07 20:48:24,577 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 13372 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 20:48:24,579 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 20:48:24,842 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 20:48:24,843 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 0ms. Found 0 repository interfaces.
+2022-12-07 20:48:24,895 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef3c318e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 20:48:24,966 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 20:48:24,969 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 20:48:24,970 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 20:48:24,997 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 20:48:24,997 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 413 ms
+2022-12-07 20:48:25,048 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2022-12-07 20:48:25,141 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2022-12-07 20:48:25,152 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 20:48:25,161 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 20:48:25,161 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 20:48:25,161 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4e86348e
+2022-12-07 20:48:25,177 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 20:48:25,190 WARN org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl [restartedMain] GenerationTarget encountered exception accepting command : Error executing DDL "INSERT INTO public.contato(	email, id_grupo, nome, telefone_celular, telefone_fixo, telefone_trabalho)	VALUES ('brunomourapaz@gmai.com', 1, 'Bruno','9999999', '888888', '888888')" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "INSERT INTO public.contato(	email, id_grupo, nome, telefone_celular, telefone_fixo, telefone_trabalho)	VALUES ('brunomourapaz@gmai.com', 1, 'Bruno','9999999', '888888', '888888')" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:440)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applyImportSources(SchemaCreatorImpl.java:491)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:180)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:155)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.clamed.Application.main(Application.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "public.contato" does not exist
+  Posição: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 36 common frames omitted
+2022-12-07 20:48:25,193 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 20:48:25,209 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 20:48:25,316 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 20:48:25,324 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 20:48:25,429 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 20:48:25,432 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 1.95 seconds (JVM running for 174.957)
+2022-12-07 20:48:25,435 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-12-07 20:48:30,479 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-16] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 20:48:30,482 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-16] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 20:48:30,483 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-16] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 20:48:30,485 INFO com.zaxxer.hikari.HikariDataSource [Thread-16] HikariPool-2 - Shutdown initiated...
+2022-12-07 20:48:30,494 INFO com.zaxxer.hikari.HikariDataSource [Thread-16] HikariPool-2 - Shutdown completed.
+2022-12-07 20:50:22,794 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 5852 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 20:50:22,799 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 20:50:22,889 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 20:50:22,889 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 20:50:24,202 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 20:50:24,309 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 98ms. Found 1 repository interfaces.
+2022-12-07 20:50:24,913 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f3f88465] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 20:50:25,501 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 20:50:25,540 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 20:50:25,540 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 20:50:25,575 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 20:50:25,770 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 20:50:25,772 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2883 ms
+2022-12-07 20:50:26,087 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 20:50:26,391 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 20:50:26,488 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 20:50:26,580 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 20:50:26,582 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 20:50:26,822 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 20:50:27,007 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 20:50:27,035 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 20:50:27,056 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5e226f80
+2022-12-07 20:50:27,766 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 20:50:27,766 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 20:50:27,952 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 20:50:27,970 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 20:50:28,005 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 20:50:28,347 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 20:50:28,746 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 20:50:28,804 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 20:50:29,116 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 20:50:29,121 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 7.025 seconds (JVM running for 7.813)
+2022-12-07 21:24:56,654 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:24:56,656 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:24:56,661 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-9] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 21:24:56,684 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown initiated...
+2022-12-07 21:24:56,699 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown completed.
+2022-12-07 21:25:02,608 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 11164 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 21:25:02,615 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 21:25:02,731 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 21:25:02,733 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 21:25:03,867 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 21:25:03,949 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 72ms. Found 1 repository interfaces.
+2022-12-07 21:25:04,480 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$327bcc91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 21:25:04,989 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 21:25:05,026 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 21:25:05,026 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 21:25:05,047 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 21:25:05,219 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 21:25:05,220 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2487 ms
+2022-12-07 21:25:05,498 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 21:25:05,760 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 21:25:05,823 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 21:25:05,900 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 21:25:05,901 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 21:25:06,117 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 21:25:06,311 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 21:25:06,336 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 21:25:06,342 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4e86348e
+2022-12-07 21:25:06,976 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 21:25:06,977 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 21:25:07,144 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 21:25:07,159 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:25:07,192 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 21:25:07,600 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 21:25:07,997 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:25:08,048 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 21:25:08,313 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 21:25:08,318 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 6.346 seconds (JVM running for 7.05)
+2022-12-07 21:25:32,484 INFO org.apache.juli.logging.DirectJDKLog [http-nio-0.0.0.0-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-07 21:25:32,486 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-12-07 21:25:32,501 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-1] Completed initialization in 13 ms
+2022-12-07 21:25:42,828 INFO com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-3] Uma mensagem de INFO
+2022-12-07 21:25:42,829 WARN com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-3] Uma mensagem de AVISO
+2022-12-07 21:25:42,829 ERROR com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-3] Uma mesagem de ERRO
+2022-12-07 21:26:24,910 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:26:24,914 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:26:24,916 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-9] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 21:26:24,936 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown initiated...
+2022-12-07 21:26:24,950 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown completed.
+2022-12-07 21:26:30,518 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 7240 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 21:26:30,522 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 21:26:30,630 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 21:26:30,631 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 21:26:31,810 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 21:26:31,901 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 80ms. Found 1 repository interfaces.
+2022-12-07 21:26:32,439 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1b1d8de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 21:26:32,965 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 21:26:33,009 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 21:26:33,011 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 21:26:33,027 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 21:26:33,229 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 21:26:33,230 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2598 ms
+2022-12-07 21:26:33,457 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 21:26:33,715 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 21:26:33,785 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 21:26:33,859 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 21:26:33,860 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 21:26:34,046 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 21:26:34,211 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 21:26:34,231 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 21:26:34,237 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5b19c308
+2022-12-07 21:26:34,940 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 21:26:34,940 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 21:26:35,423 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 21:26:35,440 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:26:35,486 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 21:26:35,834 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 21:26:36,181 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:26:36,246 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 21:26:36,525 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 21:26:36,531 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 6.702 seconds (JVM running for 7.457)
+2022-12-07 21:26:41,268 INFO org.apache.juli.logging.DirectJDKLog [http-nio-0.0.0.0-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-07 21:26:41,269 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-12-07 21:26:41,280 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-1] Completed initialization in 10 ms
+2022-12-07 21:26:41,425 INFO com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-1] Uma mensagem de INFO
+2022-12-07 21:26:41,427 WARN com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-1] Uma mensagem de AVISO
+2022-12-07 21:26:41,428 ERROR com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-1] Uma mesagem de ERRO
+2022-12-07 21:27:23,477 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:27:23,482 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:27:23,486 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-9] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 21:27:23,510 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown initiated...
+2022-12-07 21:27:23,521 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown completed.
+2022-12-07 21:27:29,214 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 12476 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 21:27:29,218 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 21:27:29,309 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 21:27:29,310 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 21:27:30,476 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 21:27:30,584 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 95ms. Found 1 repository interfaces.
+2022-12-07 21:27:31,148 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4b2208f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 21:27:31,702 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 21:27:31,742 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 21:27:31,742 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 21:27:31,777 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 21:27:31,963 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 21:27:31,965 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2654 ms
+2022-12-07 21:27:32,257 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 21:27:32,585 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 21:27:32,667 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 21:27:32,752 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 21:27:32,754 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 21:27:32,984 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 21:27:33,195 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 21:27:33,228 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 21:27:33,234 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1960ffff
+2022-12-07 21:27:33,996 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 21:27:33,997 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 21:27:34,299 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 21:27:34,378 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:27:34,409 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 21:27:34,776 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 21:27:35,160 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:27:35,235 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 21:27:35,615 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 21:27:35,625 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 7.069 seconds (JVM running for 7.819)
+2022-12-07 21:27:41,639 INFO org.apache.juli.logging.DirectJDKLog [http-nio-0.0.0.0-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-07 21:27:41,640 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-12-07 21:27:41,657 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-1] Completed initialization in 16 ms
+2022-12-07 21:27:41,783 INFO com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-1] Uma mensagem de INFO
+2022-12-07 21:27:41,784 WARN com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-1] Uma mensagem de AVISO
+2022-12-07 21:27:41,784 ERROR com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-1] Uma mesagem de ERRO
+2022-12-07 21:32:40,881 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:32:40,885 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:32:40,887 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-9] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 21:32:40,907 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown initiated...
+2022-12-07 21:32:40,916 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown completed.
+2022-12-07 21:32:47,093 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 5176 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 21:32:47,099 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 21:32:47,224 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 21:32:47,224 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 21:32:48,426 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 21:32:48,548 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 92ms. Found 1 repository interfaces.
+2022-12-07 21:32:49,121 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$221268e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 21:32:49,797 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 21:32:49,868 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 21:32:49,869 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 21:32:49,884 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 21:32:50,062 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 21:32:50,062 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2837 ms
+2022-12-07 21:32:50,304 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 21:32:50,574 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 21:32:50,679 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 21:32:50,809 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 21:32:50,811 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 21:32:51,051 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 21:32:51,249 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 21:32:51,269 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 21:32:51,275 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@61bee367
+2022-12-07 21:32:51,923 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 21:32:51,924 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 21:32:52,072 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 21:32:52,088 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:32:52,123 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 21:32:52,466 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 21:32:52,855 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:32:52,915 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 21:32:53,234 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 21:32:53,240 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 6.857 seconds (JVM running for 7.609)
+2022-12-07 21:33:07,513 INFO org.apache.juli.logging.DirectJDKLog [http-nio-0.0.0.0-8000-exec-5] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-07 21:33:07,514 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-5] Initializing Servlet 'dispatcherServlet'
+2022-12-07 21:33:07,527 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-5] Completed initialization in 12 ms
+2022-12-07 21:33:07,673 INFO com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-5] Uma mensagem de INFO
+2022-12-07 21:33:07,674 WARN com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-5] Uma mensagem de AVISO
+2022-12-07 21:33:07,675 ERROR com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-5] Uma mesagem de ERRO
+2022-12-07 21:34:14,235 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:34:14,239 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:34:14,242 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-9] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 21:34:14,267 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown initiated...
+2022-12-07 21:34:14,277 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown completed.
+2022-12-07 21:34:20,237 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 11752 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 21:34:20,246 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 21:34:20,347 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 21:34:20,348 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 21:34:21,542 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 21:34:21,652 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 94ms. Found 1 repository interfaces.
+2022-12-07 21:34:22,203 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$210f5ec2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 21:34:22,818 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 21:34:22,871 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 21:34:22,872 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 21:34:22,904 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 21:34:23,127 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 21:34:23,129 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2780 ms
+2022-12-07 21:34:23,362 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 21:34:23,672 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 21:34:23,765 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 21:34:23,856 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 21:34:23,866 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 21:34:24,110 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 21:34:24,291 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 21:34:24,312 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 21:34:24,321 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7797def2
+2022-12-07 21:34:25,050 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 21:34:25,051 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 21:34:25,437 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 21:34:25,456 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:34:25,488 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 21:34:25,846 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 21:34:26,243 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:34:26,313 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 21:34:26,734 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 21:34:26,741 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 7.371 seconds (JVM running for 8.224)
+2022-12-07 21:34:33,758 INFO org.apache.juli.logging.DirectJDKLog [http-nio-0.0.0.0-8000-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-07 21:34:33,760 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-12-07 21:34:33,771 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-2] Completed initialization in 10 ms
+2022-12-07 21:34:33,934 INFO com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-2] Uma mensagem de INFO
+2022-12-07 21:34:33,935 WARN com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-2] Uma mensagem de AVISO
+2022-12-07 21:34:33,936 ERROR com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-2] Uma mesagem de ERRO
+2022-12-07 21:34:44,391 INFO com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-3] Uma mensagem de INFO
+2022-12-07 21:34:44,391 WARN com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-3] Uma mensagem de AVISO
+2022-12-07 21:34:44,391 ERROR com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-3] Uma mesagem de ERRO
+2022-12-07 21:39:57,316 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:39:57,320 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:39:57,322 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-9] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 21:39:57,341 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown initiated...
+2022-12-07 21:39:57,347 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown completed.
+2022-12-07 21:40:03,058 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 6032 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 21:40:03,062 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 21:40:03,121 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 21:40:03,122 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 21:40:04,316 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 21:40:04,402 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 76ms. Found 1 repository interfaces.
+2022-12-07 21:40:04,988 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$87b481d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 21:40:05,548 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 21:40:05,615 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 21:40:05,618 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 21:40:05,645 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 21:40:05,810 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 21:40:05,812 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2690 ms
+2022-12-07 21:40:06,046 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 21:40:06,295 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 21:40:06,377 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 21:40:06,468 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 21:40:06,470 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 21:40:06,655 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 21:40:06,805 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 21:40:06,825 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 21:40:06,841 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@53176fa2
+2022-12-07 21:40:07,614 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 21:40:07,615 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 21:40:08,202 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 21:40:08,219 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:40:08,251 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 21:40:08,560 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 21:40:08,902 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:40:08,960 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 21:40:09,278 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 21:40:09,283 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 6.938 seconds (JVM running for 7.719)
+2022-12-07 21:40:16,369 INFO org.apache.juli.logging.DirectJDKLog [http-nio-0.0.0.0-8000-exec-4] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-07 21:40:16,370 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-4] Initializing Servlet 'dispatcherServlet'
+2022-12-07 21:40:16,379 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-4] Completed initialization in 9 ms
+2022-12-07 21:40:16,533 INFO com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-4] Uma mensagem de INFO
+2022-12-07 21:40:16,534 WARN com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-4] Uma mensagem de AVISO
+2022-12-07 21:40:16,535 ERROR com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-4] Uma mesagem de ERRO
+2022-12-07 21:41:24,540 INFO com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-5] Uma mensagem de INFO
+2022-12-07 21:41:24,542 WARN com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-5] Uma mensagem de AVISO
+2022-12-07 21:41:24,543 ERROR com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-5] Uma mesagem de ERRO
+2022-12-07 21:45:52,178 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:45:52,182 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:45:52,185 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-9] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 21:45:52,207 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown initiated...
+2022-12-07 21:45:52,216 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown completed.
+2022-12-07 21:45:57,824 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 9996 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 21:45:57,830 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 21:45:57,945 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 21:45:57,946 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 21:45:59,058 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 21:45:59,169 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 93ms. Found 1 repository interfaces.
+2022-12-07 21:45:59,673 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$221268e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 21:46:00,181 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 21:46:00,222 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 21:46:00,222 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 21:46:00,245 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 21:46:00,388 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 21:46:00,390 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2443 ms
+2022-12-07 21:46:00,634 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 21:46:00,893 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 21:46:00,966 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 21:46:01,068 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 21:46:01,070 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 21:46:01,245 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 21:46:01,420 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 21:46:01,440 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 21:46:01,453 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@61bee367
+2022-12-07 21:46:02,190 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 21:46:02,191 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 21:46:02,965 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 21:46:02,981 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:46:03,011 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 21:46:03,311 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 21:46:03,705 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:46:03,765 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 21:46:04,066 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 21:46:04,073 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 6.975 seconds (JVM running for 7.664)
+2022-12-07 21:46:23,345 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:46:23,349 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:46:23,351 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-9] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 21:46:23,375 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown initiated...
+2022-12-07 21:46:23,383 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown completed.
+2022-12-07 21:46:27,606 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 11928 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 21:46:27,611 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 21:46:27,739 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 21:46:27,740 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 21:46:29,141 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 21:46:29,267 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 113ms. Found 1 repository interfaces.
+2022-12-07 21:46:29,832 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$868433ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 21:46:30,346 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 21:46:30,386 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 21:46:30,387 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 21:46:30,408 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 21:46:30,582 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 21:46:30,583 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2843 ms
+2022-12-07 21:46:30,832 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 21:46:31,084 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 21:46:31,194 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 21:46:31,297 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 21:46:31,298 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 21:46:31,478 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 21:46:31,723 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 21:46:31,756 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 21:46:31,763 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@f8fc27f
+2022-12-07 21:46:32,475 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 21:46:32,476 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 21:46:32,774 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 21:46:32,787 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:46:32,816 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 21:46:33,142 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 21:46:33,573 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:46:33,627 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 21:46:33,969 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 21:46:33,976 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 7.061 seconds (JVM running for 7.815)
+2022-12-07 21:46:48,811 INFO org.apache.juli.logging.DirectJDKLog [http-nio-0.0.0.0-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-07 21:46:48,817 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-12-07 21:46:48,832 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-1] Completed initialization in 14 ms
+2022-12-07 21:46:48,977 INFO com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-1] Uma mensagem de INFO
+2022-12-07 21:46:48,977 WARN com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-1] Uma mensagem de AVISO
+2022-12-07 21:46:48,977 ERROR com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-1] Uma mesagem de ERRO
+2022-12-07 21:54:41,683 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:54:41,686 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:54:41,688 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-9] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 21:54:41,702 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown initiated...
+2022-12-07 21:54:41,711 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown completed.
+2022-12-07 21:54:47,364 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 6832 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 21:54:47,370 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 21:54:47,445 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 21:54:47,445 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 21:54:48,719 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 21:54:48,881 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 149ms. Found 1 repository interfaces.
+2022-12-07 21:54:49,358 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$13a3c847] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 21:54:49,884 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 21:54:49,920 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 21:54:49,921 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 21:54:49,932 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 21:54:50,092 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 21:54:50,093 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2648 ms
+2022-12-07 21:54:50,349 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 21:54:50,662 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 21:54:50,735 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 21:54:50,824 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 21:54:50,826 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 21:54:51,019 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 21:54:51,273 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 21:54:51,299 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 21:54:51,307 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@16e1f2e1
+2022-12-07 21:54:52,009 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 21:54:52,009 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 21:54:52,137 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 21:54:52,153 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:54:52,181 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 21:54:52,561 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 21:54:52,959 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:54:53,031 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 21:54:53,358 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 21:54:53,364 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 6.625 seconds (JVM running for 7.401)
+2022-12-07 21:56:22,679 INFO org.apache.juli.logging.DirectJDKLog [http-nio-0.0.0.0-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-07 21:56:22,680 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-12-07 21:56:22,690 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-1] Completed initialization in 9 ms
+2022-12-07 21:56:22,819 INFO com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-1] Uma mensagem de INFO
+2022-12-07 21:56:22,820 WARN com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-1] Uma mensagem de AVISO
+2022-12-07 21:56:22,820 ERROR com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-1] Uma mesagem de ERRO
+2022-12-07 21:57:34,530 INFO ? [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:57:34,534 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:57:34,537 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-9] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-07 21:57:34,560 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown initiated...
+2022-12-07 21:57:34,570 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown completed.
+2022-12-07 21:57:40,123 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-70OMM5P with PID 7156 (C:\Professor\agenda-clamed\target\classes started by bruno in C:\Professor\agenda-clamed)
+2022-12-07 21:57:40,128 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-12-07 21:57:40,224 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-07 21:57:40,225 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-07 21:57:41,454 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-07 21:57:41,530 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 67ms. Found 1 repository interfaces.
+2022-12-07 21:57:42,022 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$978c2ef9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-07 21:57:42,566 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-07 21:57:42,618 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-12-07 21:57:42,619 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-07 21:57:42,638 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files\Git\cmd;C:\Users\bruno\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.8.6\bin;;.]
+2022-12-07 21:57:42,792 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-07 21:57:42,794 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2568 ms
+2022-12-07 21:57:43,074 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-07 21:57:43,332 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-07 21:57:43,439 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-07 21:57:43,535 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-07 21:57:43,536 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2022-12-07 21:57:43,737 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-07 21:57:43,941 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-12-07 21:57:43,960 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2022-12-07 21:57:43,962 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@40ad596c
+2022-12-07 21:57:44,617 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-12-07 21:57:44,618 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "contato" does not exist, skipping
+2022-12-07 21:57:45,025 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Professor/agenda-clamed/target/classes/import.sql)'
+2022-12-07 21:57:45,041 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 21:57:45,071 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-07 21:57:45,400 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2022-12-07 21:57:45,746 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-07 21:57:45,823 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 21:57:46,152 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-07 21:57:46,159 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 6.629 seconds (JVM running for 7.343)
+2022-12-07 21:58:11,323 INFO ? [http-nio-0.0.0.0-8000-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-07 21:58:11,324 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-6] Initializing Servlet 'dispatcherServlet'
+2022-12-07 21:58:11,332 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8000-exec-6] Completed initialization in 7 ms
+2022-12-07 21:58:11,501 INFO com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-6] Uma mensagem de INFO
+2022-12-07 21:58:11,502 WARN com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-6] Uma mensagem de AVISO
+2022-12-07 21:58:11,502 ERROR com.clamed.service.CadastroContatoService [http-nio-0.0.0.0-8000-exec-6] Uma mesagem de ERRO
